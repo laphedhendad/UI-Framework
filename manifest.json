@@ -1,0 +1,15 @@
+﻿{
+  "name": "com.laphed.ui-framework",
+  "displayName": "UI Framework",
+  "version": "1.0.0",
+  "unity": "2020.1",
+  "author": "Laphed Hendad",
+  "description": "UI Framework based on reactive properties and MVP pattern",
+  "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "",
+    "revision": ""
+  }
+}

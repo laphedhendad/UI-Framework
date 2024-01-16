@@ -1,0 +1,16 @@
+{
+    "name": "Laphed.UIFramework",
+    "rootNamespace": "Laphed.UIFramework",
+    "references": [
+        "GUID:cdda196ad70c47f40ae7a6aff190a032"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
