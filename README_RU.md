@@ -7,8 +7,11 @@
   - [Установка](#установка)
   - [Реактивность](#реактивность)
   - [Model-View-Presenter](#model-view-presenter)
+    - [Model](#model)
+    - [View](#view)
+    - [Presenter](#presenter)
     - [Простой Presenter](#простой-presenter)
-  - [Архитектура UI](#фрхитектура-ui)
+  - [Архитектура UI](#aрхитектура-ui)
 
 # Установка
 
@@ -115,6 +118,8 @@ Presenter:
     
 ![MVP](https://github.com/laphedhendad/com.laphed.ui-framework/assets/52206303/bae3b5fe-b01c-496d-9ecf-6b93770fee03)
 
+## Model
+
 В роли модели выступает реактивное свойство/коллекция/словарь. View реализует интерфейс IView:
 
 ```csharp
@@ -124,6 +129,8 @@ Presenter:
       void UpdateView(T value);
   }
 ```
+
+## View
 
 Для MonoBehaviour отображений в пакете присутствует абстрактный класс MonoView и его наследники для конкретных типов данных:
 
@@ -155,6 +162,8 @@ Presenter:
 ```
 
 Вы можете сами создавать MonoView для собственных типов данных. Существующие в пакете решения покрывают только самые частые типы.
+
+## Presenter
 
 Presenter реализует интерфейс IPresenter:
 
