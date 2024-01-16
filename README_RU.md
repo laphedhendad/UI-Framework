@@ -85,12 +85,12 @@
 
     ...
 
-    //подпаиска на реактивное свойство
-    public BoosterPresenter(BoosterButton view, ModalWindowView buyBoosterWindow) : base(view)
+    //подписка на реактивное свойство
+    public override void SubscribeModel(TReactive model)
     {
-        this.view = view;
-        this.buyBoosterWindow = buyBoosterWindow;
-        this.view.OnClicked += HandleClick;
+        if (model == null) return;
+        this.model = model;
+        model.OnChanged += HandleModelUpdate;
     }
 
     ...
@@ -111,5 +111,9 @@ Presenter:
   * Хранит ссылку на View и обновляет его через интерфейс
   * Подписывается на события View и обрабатывает их
   * Имеет одинаковое с View время жизни и связан только с одним отображением
-![Диаграмма MVP](https://github.com/laphedhendad/com.laphed.ui-framework/assets/52206303/76513671-1f7c-4832-98e0-65b39ad42e3c)
+    
+![MVP](https://github.com/laphedhendad/com.laphed.ui-framework/assets/52206303/bae3b5fe-b01c-496d-9ecf-6b93770fee03)
+
+## Model
+
 
