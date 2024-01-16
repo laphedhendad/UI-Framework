@@ -7,6 +7,7 @@
   - [Установка](#установка)
   - [Реактивность](#реактивность)
   - [Model-View-Presenter](#model-view-presenter)
+    - [Простой Presenter](#простой-presenter)
   - [Архитектура UI](#фрхитектура-ui)
 
 # Установка
@@ -228,7 +229,7 @@ Presenter реализует интерфейс IPresenter:
 
 Часто возникают ситуации, когда отображению необходимо только показывать значение модели без лишней логики. В таких кейсах создаются экземпляры классов PropertyPresenter<TData>, CollectionPresenter<TData>, DictionaryPresenter<TKey, TValue>.
 
-```
+```csharp
   public void Bind()
   {
       //создание PropertyPresenter<TData> без наследования
@@ -236,5 +237,46 @@ Presenter реализует интерфейс IPresenter:
 
       //подписка представителя на модель
       speakerNamePresenter.SubscribeModel(reactivePassage.SpeakerName);
+  }
+```
+
+# Архитектура UI
+
+Весь UI в пакете делится на Окна (Window) и элементы. Окно - это контейнер для элементов (включая вложенные окна). Окном может называться как весь экран приложения, так и отдельное модальное окно. У окон только две ответственности: определять порядок инициализации binder'ов (см. ниже) и вызывать очистку ресурсов при уничтожении.
+
+UI связывается с остальным кодом приложения через binder. В binder прокидываются ссылки на компоненты и описывается их взаимодействие с дочерними ему элементами UI. Каждому окну должен соответствовать свой binder, при этом binder может ссылаться на элементы из окон, находящихся в иерархии на любой позиции относительно его окна.
+
+Создание окна предполагает создание GameObject'а с компонентом MonoWindow и конкретной реализацией MonoBinder.
+
+![MonoWindow](https://github.com/laphedhendad/com.laphed.ui-framework/assets/52206303/2e084ed9-16e5-4c00-97b6-ce4eb7d77449)
+
+В компонент MonoWindow прокидываются ссылки на его дочерние окна. Делать это руками не обязательно. Достаточно перед тестом приложения нажать кнопку "Find subwindows automatically" на корневом компоненте MonoWindow. Все окна в иерархии сами установят ссылки на дочерние окна.
+
+```csharp
+  //пример реализации Binder'а для окна использования бустера
+  public class BoostersBinder : MonoBinder
+  {
+      [SerializeField] private BoosterButton boosterButton;
+      [SerializeField] private ModalWindowView buyBoosterWindow;
+      
+      private IBooster booster;
+      private BoosterPresenter boosterPresenter;
+      
+      [Inject]
+      private void Construct(IBooster booster)
+      {
+          this.booster = booster;
+      }
+      
+      public override void Bind()
+      {
+          boosterPresenter = new BoosterPresenter(boosterButton, buyBoosterWindow);
+          boosterPresenter.SubscribeModel(booster.Amount);
+      }
+
+      protected override void Unbind()
+      {
+          boosterPresenter?.Dispose();
+      }
   }
 ```
