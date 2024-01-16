@@ -11,7 +11,7 @@
     - [View](#view)
     - [Presenter](#presenter)
     - [Простой Presenter](#простой-presenter)
-  - [Архитектура UI](#aрхитектура-ui)
+  - [Архитектура UI](#архитектура-ui)
 
 # Установка
 
