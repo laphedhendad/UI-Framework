@@ -1,5 +1,6 @@
 # UI Framework
-[README RU](https://github.com/laphedhendad/com.laphed.ui-framework/blob/main/README_RU.md)
+[Документация на русском языке](https://github.com/laphedhendad/com.laphed.ui-framework/blob/main/README_RU.md)
+
 
 UI Framework for Unity based on reactivity and Model-View-Presenter pattern.
 
