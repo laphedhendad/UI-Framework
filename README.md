@@ -33,7 +33,6 @@ UI Framework for Unity based on reactivity and Model-View-Presenter pattern.
 
 # Reactivity
 
-Взаимодействие интерфейса и данных построено на реактивном подходе. В пакете реализовано реактивное свойство, коллекция и словарь. Они представляют собой облегченные версии соответствующих классов из плагина [UniRx](https://github.com/neuecc/UniRx).
 The interaction between interface and data is built on a reactive approach. The package implements reactive property, collection and dictionary. They are lightweight versions of the corresponding classes from the [UniRx](https://github.com/neuecc/UniRx) plugin.
 
 ## ReactiveProperty
