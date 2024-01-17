@@ -12,6 +12,7 @@
     - [Presenter](#presenter)
     - [Простой Presenter](#простой-presenter)
   - [Архитектура UI](#архитектура-ui)
+  - [Обучающий проект](#обучающий-проект)
 
 # Установка
 
@@ -289,3 +290,7 @@ UI связывается с остальным кодом приложения 
       }
   }
 ```
+
+# Обучающий проект
+
+[Обучающий проект](https://github.com/laphedhendad/UI-Framework-Example) можно скачать архивом с GitHub. Проект использует [Zenject](https://github.com/modesttree/Zenject) и [UniTask](https://github.com/Cysharp/UniTask) в достаточно небольшом количестве, чтобы не отрывать внимание от пакета.
