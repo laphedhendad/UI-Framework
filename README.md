@@ -18,7 +18,7 @@ UI Framework for Unity based on reactivity and Model-View-Presenter pattern.
 
 # Installation
 
-  * Using .unitypackage file:
+  * Via .unitypackage file:
 
     Download package from [releases page](https://github.com/laphedhendad/com.laphed.ui-framework/releases).
     Add to project with Assets/Import Package/Custom Package...
