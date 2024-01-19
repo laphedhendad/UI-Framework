@@ -8,5 +8,7 @@
   "keywords": [ "ui", "mvp"],
   "license": "MIT",
   "category": "UI",
-  "dependencies": {}
+  "dependencies": {
+    "com.laphed.reactivity": "1.0.0"
+  }
 }
