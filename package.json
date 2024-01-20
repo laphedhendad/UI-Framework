@@ -9,6 +9,5 @@
   "license": "MIT",
   "category": "UI",
   "dependencies": {
-    "com.laphed.reactivity": "1.0.0"
   }
 }
