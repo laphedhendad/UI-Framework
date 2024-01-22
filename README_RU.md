@@ -18,7 +18,7 @@
 
 $${\color{orange}ВАЖНО!}$$
 
-Фреймворк использует в качестве зависимости другой пакет [Lightweight Reactivity Package](https://github.com/laphedhendad/com.laphed.reactivity). Установите его перед установкой UI Framework.
+Фреймворк использует в качестве зависимости другой пакет [Lightweight Reactivity Package](https://github.com/laphedhendad/Lightweight-Reactivity). Установите его перед установкой UI Framework.
 <hr>
 
   * Через .unitypackage файл:
