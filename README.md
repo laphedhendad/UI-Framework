@@ -32,9 +32,9 @@ The framework depends on the custom [lightweight reactivity package](https://git
 
     Open Window/Package Manager and choose +/Add package from git URL...
     
-    Set `https://github.com/laphedhendad/com.laphed.ui-framework.git` as URL.
+    Set `https://github.com/laphedhendad/UI-Framework.git` as URL.
 
-    If you want to set a target version, UI Framework uses the \*.\*.\* release tag so you can specify a version like #1.0.0. For example `https://github.com/laphedhendad/com.laphed.ui-framework.git#1.0.0`.
+    If you want to set a target version, UI Framework uses the \*.\*.\* release tag so you can specify a version like #1.0.0. For example `https://github.com/laphedhendad/UI-Framework.git#1.0.0`.
 
 # Reactivity
 
