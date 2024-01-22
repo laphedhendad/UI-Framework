@@ -1,5 +1,5 @@
 # UI Framework
-[Документация на русском языке](https://github.com/laphedhendad/com.laphed.ui-framework/blob/main/README_RU.md)
+[Документация на русском языке](https://github.com/laphedhendad/UI-Framework/blob/main/README_RU.md)
 
 
 UI Framework for Unity based on reactivity and Model-View-Presenter pattern.
@@ -25,7 +25,7 @@ The framework depends on the custom [lightweight reactivity package](https://git
 
   * Via .unitypackage file:
 
-    Download package from [releases page](https://github.com/laphedhendad/com.laphed.ui-framework/releases).
+    Download package from [releases page](https://github.com/laphedhendad/UI-Framework/releases).
     Add to project with Assets/Import Package/Custom Package...
     
   * Via git URL:
@@ -125,7 +125,7 @@ Presenter:
   * Subscribes to View events and processes them
   * Has the same lifetime as View and is associated with only one view
     
-![MVP](https://github.com/laphedhendad/com.laphed.ui-framework/assets/52206303/bae3b5fe-b01c-496d-9ecf-6b93770fee03)
+![MVP](https://github.com/laphedhendad/UI-Framework/assets/52206303/bae3b5fe-b01c-496d-9ecf-6b93770fee03)
 
 ## Model
 
@@ -266,7 +266,7 @@ The UI is connected to the rest of the application code through binders. Referen
 
 Creating a window involves creating a GameObject with the MonoWindow component and a specific implementation of MonoBinder.
 
-![MonoWindow](https://github.com/laphedhendad/com.laphed.ui-framework/assets/52206303/2e084ed9-16e5-4c00-97b6-ce4eb7d77449)
+![MonoWindow](https://github.com/laphedhendad/UI-Framework/assets/52206303/2e084ed9-16e5-4c00-97b6-ce4eb7d77449)
 
 References to its child windows are passed to the MonoWindow component. Doing this manually is not mandatory. It is sufficient to press the "Find subwindows automatically" button on the root MonoWindow component before testing the application. All windows in the hierarchy will automatically set references to their child windows.
 
