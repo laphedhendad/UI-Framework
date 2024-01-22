@@ -23,15 +23,15 @@ $${\color{orange}ВАЖНО!}$$
 
   * Через .unitypackage файл:
 
-    Скачайте пакет со [страницы релизов](https://github.com/laphedhendad/com.laphed.ui-framework/releases).
+    Скачайте пакет со [страницы релизов](https://github.com/laphedhendad/UI-Framework/releases).
     Добавьте его в свой проект с помощью Assets/Import Package/Custom Package...
   * Через ссылку на git:
 
     Откройте Window/Package Manager, выберите +/Add package from git URL...
     
-    Укажите ссылку на пакет: `https://github.com/laphedhendad/com.laphed.ui-framework.git`
+    Укажите ссылку на пакет: `https://github.com/laphedhendad/UI-Framework.git`
     
-    Можно выбрать конкретную версию пакета, указав её в ссылке: `https://github.com/laphedhendad/com.laphed.ui-framework.git#1.0.0`
+    Можно выбрать конкретную версию пакета, указав её в ссылке: `https://github.com/laphedhendad/UI-Framework.git#1.0.0`
 
 # Реактивность
 
@@ -122,7 +122,7 @@ Presenter:
   * Подписывается на события View и обрабатывает их
   * Имеет одинаковое с View время жизни и связан только с одним отображением
     
-![MVP](https://github.com/laphedhendad/com.laphed.ui-framework/assets/52206303/bae3b5fe-b01c-496d-9ecf-6b93770fee03)
+![MVP](https://github.com/laphedhendad/UI-Framework/assets/52206303/bae3b5fe-b01c-496d-9ecf-6b93770fee03)
 
 ## Model
 
@@ -263,7 +263,7 @@ UI связывается с остальным кодом приложения 
 
 Создание окна предполагает создание GameObject'а с компонентом MonoWindow и конкретной реализацией MonoBinder.
 
-![MonoWindow](https://github.com/laphedhendad/com.laphed.ui-framework/assets/52206303/2e084ed9-16e5-4c00-97b6-ce4eb7d77449)
+![MonoWindow](https://github.com/laphedhendad/UI-Framework/assets/52206303/2e084ed9-16e5-4c00-97b6-ce4eb7d77449)
 
 В компонент MonoWindow прокидываются ссылки на его дочерние окна. Делать это руками не обязательно. Достаточно перед тестом приложения нажать кнопку "Find subwindows automatically" на корневом компоненте MonoWindow. Все окна в иерархии сами установят ссылки на дочерние окна.
 
