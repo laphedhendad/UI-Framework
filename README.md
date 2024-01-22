@@ -20,7 +20,7 @@ UI Framework for Unity based on reactivity and Model-View-Presenter pattern.
 
 $${\color{orange}IMPORTANT!}$$
 
-This framework depends on the custom [lightweight reactivity package](https://github.com/laphedhendad/com.laphed.reactivity). You need to install this before installing the UI Framework.
+The framework depends on the custom [lightweight reactivity package](https://github.com/laphedhendad/com.laphed.reactivity). You need to install this before installing the UI Framework.
 <hr>
 
   * Via .unitypackage file:
@@ -108,7 +108,7 @@ The events pass the key of the changed element as parameters.
 
   ...
 
-  //changing value of the reactive property
+  //changing value of a reactive property
   private void BuyBooster()
   {
       booster.Amount.Value++;
