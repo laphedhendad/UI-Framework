@@ -20,7 +20,7 @@ UI Framework for Unity based on reactivity and Model-View-Presenter pattern.
 
 $${\color{orange}IMPORTANT!}$$
 
-The framework depends on the custom [lightweight reactivity package](https://github.com/laphedhendad/com.laphed.reactivity). You need to install this before installing the UI Framework.
+The framework depends on the custom [lightweight reactivity package](https://github.com/laphedhendad/Lightweight-Reactivity). You need to install this before installing the UI Framework.
 <hr>
 
   * Via .unitypackage file:
