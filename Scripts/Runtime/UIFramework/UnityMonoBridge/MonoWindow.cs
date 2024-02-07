@@ -2,7 +2,7 @@
 
 namespace UIFramework
 {
-    public sealed class MonoWindow: MonoBehaviour, IWindow
+    public class MonoWindow: MonoBehaviour, IWindow
     {
         [SerializeField] private MonoBinder binder;
         [SerializeField] private MonoWindow[] subwindows;
