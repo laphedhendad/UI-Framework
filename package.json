@@ -2,7 +2,7 @@
   "name": "com.laphed.ui-framework",
   "displayName": "UI Framework",
   "author": { "name": "Laphed Hendad", "url": "https://github.com/laphedhendad" },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "unity": "2020.1",
   "description": "UI Framework for Unity based on reactivity and MVP pattern.",
   "keywords": [ "ui", "mvp"],
